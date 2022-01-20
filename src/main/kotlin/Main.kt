@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
         println("Введите сумму перевода и тип вашей карты(Mastercard, Maestro, Visa, Мир, VK Pay)")
         val summ = scan.next().toDouble()
         val type = scan.next()
-        den.transferCommission(summ, type)
-        println("${den.dayLimit}")
+
+        den.printCommission(den.transferCommission(summ, type))
     }
 }
